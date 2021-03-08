@@ -1,0 +1,12 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { SecondCompComponent } from './second-comp.component';
+
+const routes: Routes = [{ path: '', component: SecondCompComponent }];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class SecondCompRoutingModule { }
